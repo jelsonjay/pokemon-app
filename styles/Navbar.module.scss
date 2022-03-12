@@ -1,0 +1,42 @@
+@use 'variables';
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.2rem;
+	margin-bottom: 2rem;
+	background-color: variables.$whitesmoke;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		margin-left: 0.5rem;
+	}
+}
+
+.links li {
+	margin-right: 1.3rem;
+}
+
+.links {
+	display: flex;
+	list-style: none;
+	margin-right: 1.5rem;
+
+	li {
+		margin-right: 1.3rem;
+	}
+	a {
+		color: variables.$black;
+		text-decoration: none;
+		padding: 0.5rem;
+		transition: 0.4s;
+		border-bottom: 0.2rem solid transparent;
+		&:hover {
+			border: variables.$primary;
+		}
+	}
+}
