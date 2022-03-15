@@ -1,3 +1,4 @@
+@use 'variables';
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -7,7 +8,8 @@
 html,
 body {
 	font-family: 'Poppins', sans-serif;
-	background-color: #fff;
+	background-color: variables.$whitesmoke;
+	height: 95vh;
 }
 
 a {

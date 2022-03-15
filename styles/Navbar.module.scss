@@ -1,12 +1,16 @@
 @use 'variables';
 
+.container {
+	background-color: variables.$whitesmoke;
+	border-bottom: 0.1rem solid variables.$primary;
+}
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 1.2rem;
 	margin-bottom: 2rem;
-	background-color: variables.$whitesmoke;
 	max-width: 70rem;
 	margin: 0 auto;
 	width: 100%;
