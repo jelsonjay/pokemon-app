@@ -22,6 +22,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+
+	h3 {
+		font-size: 1.25rem;
+	}
 }
 .type {
 	padding: 0.6rem 1rem;
@@ -34,8 +39,53 @@
 }
 
 .type_fire {
-	background-color: blue;
+	background-color: rgb(226, 178, 22);
 }
 .type_grass {
 	background-color: rgb(212, 0, 255);
+}
+
+.type_bug {
+	background-color: rgb(0, 255, 42);
+}
+.type_ghost {
+	background-color: rgb(255, 51, 0);
+}
+.type_rock {
+	background-color: rgb(0, 217, 255);
+}
+.type_dragon {
+	background-color: rgb(24, 59, 88);
+}
+.type_psychic {
+	background-color: rgb(0, 255, 234);
+}
+.type_dark {
+	background-color: rgb(73, 82, 73);
+}
+.type_fairy {
+	background-color: rgb(0, 255, 128);
+}
+.type_steel {
+	background-color: rgb(184, 113, 20);
+}
+
+.data_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.5rem;
+
+	div {
+		margin: 1rem 0;
+		padding: 0 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+.data_height {
+	border-right: 0.2rem solid variables.$primary;
 }

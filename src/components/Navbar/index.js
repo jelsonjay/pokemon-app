@@ -18,9 +18,6 @@ function Navbar() {
 				<ul className={styles.links}>
 					<li>
 						<Link href='/'>
-							<a>Home</a>
-						</Link>
-						<Link href='/pokemons'>
 							<a>Pokemons</a>
 						</Link>
 						<Link href='/about'>

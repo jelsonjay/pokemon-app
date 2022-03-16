@@ -35,7 +35,7 @@ function Pokemon({ pokemon }) {
 				<p>ID: {pokemon.id}</p>
 			</div>
 			<div className={styles.type_wrap}>
-				<h3>Type</h3>
+				<h3>Type:</h3>
 				<div>
 					{pokemon.types.map((item, index) => (
 						<span
