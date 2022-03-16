@@ -1,0 +1,19 @@
+/* Extra small devices (phones, 600px and down) */
+@mixin mobile {
+	@media (max-width: 600px) {
+		@content;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin tablet {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@mixin desktop {
+	@media (max-width: 1200px) {
+		@content;
+	}
+}

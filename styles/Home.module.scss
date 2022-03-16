@@ -1,9 +1,12 @@
 @use 'variables';
+@use 'mixins';
+
 .title {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 2rem;
+	margin-top: 2rem;
 	color: variables.$primary;
 }
 .container {
@@ -22,9 +25,19 @@
 	flex-direction: column;
 	margin-bottom: 1.25rem;
 	width: 30%;
-	border: 0.1rem solid whitesmoke;
+	margin: 0.8rem;
+	border: 0.1rem solid variables.$primary;
 	box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-
+	@include mixins.tablet {
+		flex-direction: column;
+		width: 50%;
+		margin: 20px;
+	}
+	@include mixins.mobile {
+		flex-direction: column;
+		width: 100%;
+		margin: 1.25rem;
+	}
 	.title {
 		margin: 1rem 0;
 		background-color: variables.$primary;

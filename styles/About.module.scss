@@ -1,9 +1,12 @@
+@use 'variables';
 .about {
 	text-align: center;
 
 	h1 {
 		font-size: 2rem;
 		margin-bottom: 1.5rem;
+		margin-top: 2rem;
+		color: variables.$primary;
 	}
 	p {
 		margin-bottom: 1.25rem;
