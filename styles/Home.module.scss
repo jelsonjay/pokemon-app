@@ -68,3 +68,32 @@
 		}
 	}
 }
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	padding: 1rem;
+	border: 0.1rem solid variables.$primary;
+	margin: 4rem;
+	background: variables.$primary;
+	cursor: pointer;
+	transition: transform 0.3s linear;
+
+	&:hover {
+		background: variables.$primary;
+		transform: scale(1.1);
+		color: #fff;
+	}
+	@include mixins.tablet {
+		flex-direction: column;
+		width: 50%;
+		margin: 20px;
+	}
+	@include mixins.mobile {
+		flex-direction: column;
+		width: 100%;
+		margin: 1.25rem;
+	}
+}

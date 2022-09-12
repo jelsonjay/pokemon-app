@@ -1,8 +1,10 @@
 @use 'variables';
+@use 'mixins';
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 html,
@@ -10,6 +12,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	background-color: variables.$whitesmoke;
 	height: 95vh;
+	@include mixins.custom-scroll-bar();
 }
 
 a {

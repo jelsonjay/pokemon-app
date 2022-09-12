@@ -18,7 +18,7 @@ function Card({ pokemon }) {
 				</p>
 				<h3>{pokemon.name}</h3>
 				<Link href={`/pokemon/${pokemon.id}`}>
-					<a className={styles.btn}> More Info</a>
+					<a className={styles.btn}>More Info</a>
 				</Link>
 			</div>
 		</>

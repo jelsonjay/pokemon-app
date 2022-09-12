@@ -1,7 +1,15 @@
+import { useState } from 'react';
 import styles from '../../styles/Home.module.scss';
 import Card from '../components/Card';
 
 export default function Home({ pokemons }) {
+	const [noOfLoad, setNoOfLoad] = useState(6);
+
+	// load more items
+	const loadMore = () => {
+		setNoOfLoad(noOfLoad + noOfLoad);
+	};
+
 	return (
 		<>
 			<div>
@@ -10,10 +18,13 @@ export default function Home({ pokemons }) {
 				</div>
 
 				<div className={styles.container}>
-					{pokemons.map(pokemon => (
+					{pokemons.slice(0, noOfLoad).map(pokemon => (
 						<Card key={pokemon.id} pokemon={pokemon} />
 					))}
 				</div>
+				<a onClick={() => loadMore()} className={styles.buttons}>
+					Load More Pokemon
+				</a>
 			</div>
 		</>
 	);
